@@ -2344,3 +2344,35 @@ body:has(.case-study) .back-home {
         text-align: center;
     }
 }
+
+/* =========================================
+   MOBILE NAVIGATION
+========================================= */
+
+@media (max-width: 767px) {
+
+    .navbar {
+        overflow-x: auto;
+        overflow-y: hidden;
+        white-space: nowrap;
+        flex-wrap: nowrap;
+        -webkit-overflow-scrolling: touch;
+        scrollbar-width: none;
+    }
+
+    .navbar::-webkit-scrollbar {
+        display: none;
+    }
+
+    .nav-links {
+        display: flex;
+        flex-wrap: nowrap;
+        width: max-content;
+        flex-shrink: 0;
+    }
+
+    .nav-links li {
+        flex-shrink: 0;
+    }
+
+}
